@@ -16,7 +16,7 @@ node {
      sh "${mavenHome}/bin/mvn sonar:sonar" 
     }
     
-    stage('NexusUpload')
+    /*stage('NexusUpload')
     {
     sh "${mavenHome}/bin/mvn clean deploy"
     }
@@ -26,5 +26,5 @@ node {
     sshagent(['8a541ad3-9649-4b40-a154-d6bb318fc5cf']) {
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.122.126:/opt/apache-tomcat-8.5.69/webapps"
     }
-    }
+    }*?
     }
