@@ -11,12 +11,12 @@ node ('nodes') {
      sh "${mavenHome}/bin/mvn clean package"
     }
     
-    stage('SonarqubeReport')
+    /*stage('SonarqubeReport')
     {
      sh "${mavenHome}/bin/mvn sonar:sonar" 
     }
     
-    /*stage('NexusUpload')
+    stage('NexusUpload')
     {
     sh "${mavenHome}/bin/mvn clean deploy"
     }
